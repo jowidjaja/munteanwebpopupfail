@@ -1,0 +1,122 @@
+<!--DOCUMENT SETUP-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale-1"/>
+  <title>MunteanLab || Home</title>
+  <link rel="stylesheet" href="munteanlab.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link href="https://fonts.cdnfonts.com/css/abadi-mt-std?styles=15890,15885,15888,15881,15883" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/franklin-gothic?styles=17611,17609,17610,17612,17613" rel="stylesheet">  
+  <script defer src="munteanlab.js"></script>                     
+  </head>
+<!--END DOCUMENT SETUP-->
+
+<body>
+<!--START OF WRAPPER-->
+  <div id="wrapper">
+  <header>
+  <!--NAVIGATION BAR-->
+  <div class="logo">
+    <a href="home.html"><img class="logo" src="images/logo1.png" alt="Plain Logo" width="175"></a>
+  </div>
+  <div class="internal_logo">
+    <a href="home.html"><img class="logo" src="images/logo2.png" alt="Plain Logo" width="175"></a>
+  </div>
+  <nav class="nav_links">
+    <input type="checkbox" class="toggle-menu">
+    <div class="hamburger"></div>
+    <ul class="menu">
+      <li class="nav_item"><a href="home.html">Home</a></li>
+      <li class="nav_item"><a href="research.html">Research</a></li>
+      <li class="nav_item"><a href="people.html">People</a></li>
+      <li class="nav_item"><a href="papers.html">Papers</a></li>
+      <li class="nav_item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!--END NAVIGATION BAR-->
+  </header>
+  <div class="slider_cont">
+  <!--HOME IMAGE-->
+  <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name = "radio=-btn" id="radio1">
+      <input type="radio" name = "radio=-btn" id="radio2">
+      <input type="radio" name = "radio=-btn" id="radio3">
+      <input type="radio" name = "radio=-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <!--Neuron Wallpaper Cover: https://wallpaperaccess.com/neurons-->
+      <div class="slide first">
+        <img src="images/homepic3.png" alt="" class="image_l" >
+        <img src="images/test1_h.png" alt="" class="image_s" >
+      </div>
+      <div class="slide">
+        <img src="images/test6.png" alt="" class="image_l">
+        <img src="images/test2_h.png" alt="" class="image_s" >
+      </div>
+      <div class="slide">
+        <img src="images/test7.png" alt="" class="image_l">
+        <img src="images/test3_h.png" alt="" class="image_s" >
+      </div>
+      <div class="slide">
+        <img src="images/test8.png" alt="" class="image_l">
+        <img src="images/test4_h.png" alt="" class="image_s" >
+      </div>
+      <!--slide images end-->
+          <!--automatic navigation start-->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    </div>
+    <!--automatic navigation end-->
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+    </div>
+    
+    
+    <!--image slider end-->
+  </div>
+  <div class="homebutton">
+    <a href="research.html">EXPLORE</a>
+  </div>
+  <!--end slider cont-->
+ 
+</div>
+
+
+
+<script type="text/javascript">
+  radiobtn = document.getElementById("radio1");
+  radiobtn.checked = true;
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 4){
+      counter=1;
+    }
+  }, 5000);
+</script>
+</body>
+
+<!--FOOTER-->
+<div class=footer>
+  <p><em>MunteanLab &copy; 2023</em>  </p>
+</div>
+
+</html>
