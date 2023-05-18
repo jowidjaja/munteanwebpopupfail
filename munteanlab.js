@@ -15,7 +15,7 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('popup_button');
 const popUp = document.querySelector('.pop-up');
 
 const people = [
